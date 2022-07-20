@@ -1,22 +1,85 @@
 .game h1 {
+  font-size: 2em;
+  padding: 0 1.5em;
+}
+.points span {
+  font-weight: bold;
+}
+
+.game {
+  max-height: 100vh;
+}
+.tip span {
+  color: #ecfa00;
+}
+.tip {
+  padding: 0 1.5em;
+}
+
+.wordContainer {
+  margin: 1em;
+  padding: 1em;
+  border: 10px solid #ecfa00;
+  display: flex;
+  width: auto;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter,
+.blankSquare {
+  font-size: 29px;
+  /*Alinha texto no quadrado*/
+  line-height: 1.5;
+  border: 2px solid #000;
+  height: 40px;
+  width: 40px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*    font-size: 29px; */
+.letterContainer input {
+  height: 40px;
+  width: 40px;
+  font-size: 29px;
+  text-align: center;
+  margin-right: 1em;
+}
+
+@media (min-width: 640px) {
+  .game h1 {
     font-size: 2.5em;
   }
-  
+
   .points span {
     font-weight: bold;
   }
-  
+
   .tip span {
     color: #ecfa00;
   }
-  
+
   .wordContainer {
     margin: 1.5em;
     padding: 1.5em;
     border: 20px solid #ecfa00;
     display: flex;
+    max-width: 600px;
   }
-  
+
   .letter,
   .blankSquare {
     font-size: 70px;
@@ -30,17 +93,17 @@
     color: #000;
     font-weight: bold;
   }
-  
+
   .letterContainer p {
     margin-bottom: 1.2em;
   }
-  
+
   .letterContainer form {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .letterContainer input {
     height: 50px;
     width: 50px;
@@ -48,3 +111,4 @@
     text-align: center;
     margin-right: 1em;
   }
+}

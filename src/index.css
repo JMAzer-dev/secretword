@@ -18,6 +18,25 @@ body{
 button{
   background: #1646a0;
   color: #fff;
+  padding: 0 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  height: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover{
+  background-color: #0923af;
+}
+
+@media(min-width: 640px){
+  button{
+  background: #1646a0;
+  color: #fff;
   padding: 0 45px;
   border: 2px solid #fff;
   border-radius: 25px;
@@ -28,7 +47,4 @@ button{
   cursor: pointer;
   transition: 0.4s;
 }
-
-button:hover{
-  background-color: #0923af;
 }

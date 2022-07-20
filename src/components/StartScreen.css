@@ -1,8 +1,23 @@
-.start h1{
-    font-size: 3.5em;
+.start h1 {
+  font-size: 2.5em;
 }
 
-.start p{
-    margin-bottom: 2em;
-    color: #ecfa00;
+.start p {
+  margin-bottom: 2em;
+  color: #ecfa00;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .start h1 {
+    font-size: 3.5em;
+  }
 }

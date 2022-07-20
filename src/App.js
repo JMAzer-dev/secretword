@@ -124,14 +124,14 @@ function App() {
     const uniqueLetters = [...new Set(letters)];
 
     // win condition - take the guessesd letters of verify letters funct and compare with new class Contructor 'Set'
-    if (guessedLetters.length === uniqueLetters.length) {
+    if (guessedLetters.length === uniqueLetters.length && gameStage === stages[1].name) {
       // add score
       setScore((actualScore) => (actualScore += 100));
 
       // restart game with new word and reset letter states
       startGame();
     }
-  }, [guessedLetters, letters, startGame]);
+  }, [guessedLetters, letters, startGame, gameStage]);
 
   return (
     <div className="App">
